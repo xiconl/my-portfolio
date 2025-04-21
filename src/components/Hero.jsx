@@ -15,7 +15,7 @@ const Hero = () => {
         <Navbar className="bg-dark fixed-top">
           <Navbar.Brand className="text-light ms-5">ALOYSIUS CHIKWENDU</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav"></Navbar.Collapse>
+          <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto me-5">
             <a href="#Hero" className="nav-link text-light">Home</a>
             <a href="#Skill" className="nav-link text-light">Skills</a>
@@ -23,6 +23,7 @@ const Hero = () => {
             <a href="#Work" className="nav-link text-light">Work</a>
             <a href="#Contact" className="nav-link text-light">Contact</a>
           </Nav>
+          </Navbar.Collapse>
         </Navbar>
       </section>
 
