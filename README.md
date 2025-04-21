@@ -8,3 +8,4 @@ Work: where you get to know the previous projects I have worked on
 Contact: where you can see my contact details and my social media handles for easy connection
 
 This porfolio website is built with vite + react
+
