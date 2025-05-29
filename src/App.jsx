@@ -1,9 +1,11 @@
 import React from 'react'
-import Hero from './components/Hero.jsx'
+import Navbar from './components/MyNavbar.jsx'
+import Hero from './components/hero.jsx'
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-light text-dark">
+      <Navbar />
       <Hero />
     </div>
   )

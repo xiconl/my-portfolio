@@ -1,46 +1,35 @@
 import React from "react";
-import { Container, Row, Col, Image, Button, Navbar, Nav } from "react-bootstrap";
+import { Container, Row, Col, Image, Button, Navbar, Nav, Stack } from "react-bootstrap";
 import { Mail, Github, Linkedin, Phone } from "lucide-react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-
-
+import image from '../assets/myImgage.jpg'
 
 const Hero = () => {
   return (
-    <div className="bg-light text-dark">
-      {/* Navbar */}
-      <section>
-        <Navbar className="bg-dark fixed-top">
-          <Navbar.Brand className="text-light ms-5">ALOYSIUS CHIKWENDU</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto me-5">
-            <a href="#Hero" className="nav-link text-light">Home</a>
-            <a href="#Skill" className="nav-link text-light">Skills</a>
-            <a href="#About" className="nav-link text-light">About</a>
-            <a href="#Work" className="nav-link text-light">Work</a>
-            <a href="#Contact" className="nav-link text-light">Contact</a>
-          </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </section>
-
+    <div>
       {/* Hero Section */}
       <section id="Hero" className="py-5 bg-info text-center">
         <Container>
           <h1 className="display-4 mt-5 fw-bold text-light">Hi, I'm <span className="text-dark">Aloysius Chikwendu</span></h1>
-          <Image
-            src="https://pbs.twimg.com/profile_images/1599577261191172096/bHFg6_N2_400x400.jpg"
-            className="my-4"
+          <Stack className="container mt-4"><Image
+            src={image}
+            className="d-block mx-auto rounded-3"
             width={250}
             height={250}
             alt="Aloysius Chikwendu"
-          />
-          <p className="lead mx-auto text-dark" style={{ maxWidth: "600px" }}>
+          /></Stack>
+          <p className="lead mx-auto text-dark pt-5" style={{ maxWidth: "600px" }}>
             I'm a passionate Web Developer who loves crafting beautiful and functional websites with modern technologies.
           </p>
+          <a
+            href="/myResume.pdf"
+            download
+            className="bg-blue-500 text-white px-4 py-2 rounded text-decoration-none hover:bg-blue-600"
+          >
+            My Resume
+          </a>
         </Container>
       </section>
 
